@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Contact John</title>
+<script language="JavaScript"><!--
+// This script hereby is dedicated in the Public Domain
+// as long as nobody else claims the copyright for it.
+// origin: 2000-01-08 nospam@geht.net http://tools.geht.net/rot13.html
+// Use at own risk.
+
+var rot13map;
+
+// The problem is that JavaScript 1.0
+// does not provide a Char to Numeric value conversion
+// Thus we define a map.
+// Because there are 64K UniCode characters, this map does not cover all characters.
+function rot13init()
+{
+  var map = new Array();
+  var s   = "abcdefghijklmnopqrstuvwxyz";
+  
+  for (i=0; i<s.length; i++)
+    map[s.charAt(i)]			= s.charAt((i+13)%26);
+  for (i=0; i<s.length; i++)
+    map[s.charAt(i).toUpperCase()]	= s.charAt((i+13)%26).toUpperCase();
+  return map;
+}
+
+function rot13(a)
+{
+  if (!rot13map)
+    rot13map=rot13init();
+  s = "";
+  for (i=0; i<a.length; i++)
+    {
+      var b = a.charAt(i);
+
+      s	+= (b>='A' && b<='Z' || b>='a' && b<='z' ? rot13map[b] : b);
+    }
+  return s;
+}
+
+function sendme()
+{
+    document.comments.to.value = rot13(document.comments.to.value);
+    document.comments.submit();
+}
+
+// --></script>
+
+
+<body background="nice.stonebackg.jpg">
+<center>
+<table border=0 cellpadding=5 width=70%>
+	<tr>
+		<td valign=top align=left>
+		<font face="verdana, arial, helvetica" size=-1>
+		&nbsp;
+		<br>
+		<h3>Contact John</h3>
+
+		All right, let me have it!
+		</font>
+		</td>
+	</tr>
+</table>
+<table border=0 cellpadding=5 width=70%>
+	<tr>
+		<td valign=top align=left>
+		<font face="verdana, arial, helvetica" size=-1>
+		<form name="comments" action="http://www-personal.umich.edu/cgi-bin/htmail" method="post">
+		<input type=hidden name=to value=ovat@hzvpu.rqh><p>
+		your name:
+		</font>
+		</td>
+		<td valign=top align=left>
+		 <input type=text name=name>
+		</td>
+	</tr>
+	<tr>
+		<td valign=top align=left>
+		<font face="verdana, arial, helvetica" size=-1>
+		your email address:
+		</font>
+		</td>
+		 <td valign=top align=left>
+		 <input type=text name=from>
+		 </td>
+	</tr>
+	<tr>
+		<td valign=top align=left> 
+		<font face="verdana, arial, helvetica" size=-1>
+		subject: 
+		</font>
+		</td>
+		<td valign=top align=left>
+		<select name="subject">
+		<option selected label="select a subject" value="bingmail"></option>
+		<option label="I'm a Cady or at least I know one" value="bingmail from Cady"></option>
+		<option label="I'm a woman and you're the sexiest man alive" value="bingmail from woman"></option>
+		
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td valign=top align=left> 
+		<font face="verdana, arial, helvetica" size=-1>
+		go for it: 
+		</font>
+		</td>
+		<td valign=top align=left>
+		<textarea name="body" rows="10" cols="60">
+		</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td valign=top align=left> 
+		&nbsp;  
+		</td>
+		<td valign=top align=left>
+		<input type=button onclick=sendme(); value=send>
+		</form>
+		</td>
+	</tr>
+</table>
+<p>
+
+</body>
+</html>

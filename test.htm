@@ -1,0 +1,183 @@
+<HTML>
+<HEAD>
+
+<TITLE>Examples</TITLE>
+
+
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=000000 VLINK=0000FF>
+Shoes are really good to run in.
+<P>
+<B>This is really an examples page.</B>
+
+<HR>
+<H2>Image Map</H2>
+<A HREF="/cgi-bin/imagemap/~bing/imgmap.map">
+<IMG SRC="imgmap.gif" ISMAP BORDER=0></A>
+
+<HR>
+<H2><A NAME="alpha">Floating Image</A></H2>
+Here's an example of a floating image with a border, 8 pt space vertical and horizontal, and<TT>&lt;BR&gt; and &lt;BR CLEAR=left&gt;</TT> tags.
+<P>
+Hello World Hello World Hello World Hello World Hello World Hello World <TT>&lt;BR&gt;</TT>
+<BR>
+
+<IMG SRC="images/stampbt.gif" ALIGN=left WIDTH=98 HEIGHT=65 BORDER=2 VSPACE=8 HSPACE=8>
+
+Hello World Hello World Hello World <TT>&lt;BR&gt;</TT>
+<BR>
+Hello World Hello World Hello World <TT>&lt;BR&gt;</TT>
+<BR>
+Hello World Hello World Hello World <TT>&lt;BR&gt;</TT>
+<BR>
+Hello World Hello World Hello World <TT>&lt;BR&gt;</TT>
+<BR>
+Hello World Hello World Hello World Hello World Hello World <TT>&lt;BR CLEAR=left&gt;</TT> 
+<BR CLEAR=LEFT>
+Hello World Hello World Hello World 
+<P>
+<HR>
+
+<H2><A NAME="beta">Duelling Images</A></H2>
+<IMG SRC="images/stampbt.gif" ALIGN=left WIDTH=98 HEIGHT=65 BORDER=2>
+<IMG SRC="images/stampbt.gif" ALIGN=right WIDTH=98 HEIGHT=65 BORDER=2>
+This text will flow in the middle until one of two things happens. Either the text will be long enough to flow longer than the image height or the <TT>&lt;BR CLEAR=left | right&gt;</TT> tag will be encountered.
+<BR CLEAR=left>
+<BR CLEAR=right>
+See, <TT>&lt;BR CLEAR=left | right&gt;</TT> works.
+
+<P>
+<HR>
+
+<H2><A NAME="gamma">Nested List Example</A></H2> 
+<OL TYPE=I> 
+	<LI> Introduction
+	<LI> 80 Years War
+	<OL  TYPE=A>
+		<LI> Mission
+		<LI> Troop Movements
+	</OL>
+	<LI> 30 Years War
+	<OL TYPE=A>
+		<LI> Spanish Habsburgs
+		<OL>
+			<LI> Mission
+			<LI> New World Revenue
+			<LI> Troop Quality
+		</OL>
+		<LI> Austrian Habsburgs
+		<OL>
+			<LI> Mission
+			<LI> Proximity of War
+			<LI> Wartime Resources
+		</OL>
+		<LI> Allies
+	</OL>
+	<LI> Ottoman Empire and it's Influence
+	<OL  TYPE=A>
+		<LI> Maritime Power
+		<LI> Hungary
+		<LI> Lack of Innovation
+	</OL>
+	<LI> Decline of the Habsburgs
+	<OL  TYPE=A>
+		<LI> Financial Disaster
+		<LI> Military Disaster
+	</OL>
+</OL>
+
+<PRE>
+&lt;OL TYPE=I&gt; 
+	&lt;LI&gt; Introduction
+	&lt;LI&gt; 80 Years War
+	&lt;OL  TYPE=A&gt;
+		&lt;LI&gt; Mission
+		&lt;LI&gt; Troop Movements
+	&lt;/OL&gt;
+	&lt;LI&gt; 30 Years War
+	&lt;OL TYPE=A&gt;
+		&lt;LI&gt; Spanish Habsburgs
+		&lt;OL&gt;
+			&lt;LI&gt; Mission
+			&lt;LI&gt; New World Revenue
+			&lt;LI&gt; Troop Quality
+		&lt;/OL&gt;
+		&lt;LI&gt; Austrian Habsburgs
+		&lt;OL&gt;
+			&lt;LI&gt; Mission
+			&lt;LI&gt; Proximity of War
+			&lt;LI&gt; Wartime Resources
+		&lt;/OL&gt;
+		&lt;LI&gt; Allies
+	&lt;/OL&gt;
+	&lt;LI&gt; Ottoman Empire and it's Influence
+	&lt;OL  TYPE=A&gt;
+		&lt;LI&gt; Maritime Power
+		&lt;LI&gt; Hungary
+		&lt;LI&gt; Lack of Innovation
+	&lt;/OL&gt;
+	&lt;LI&gt; Decline of the Habsburgs
+	&lt;OL  TYPE=A&gt;
+		&lt;LI&gt; Financial Disaster
+		&lt;LI&gt; Military Disaster
+	&lt;/OL&gt;
+&lt;/OL&gt;
+</PRE>
+
+<P>
+<HR>
+
+
+<H2><A NAME="delta"><TT>&lt;TABLE&gt;</TT></A> Example</H2>
+
+<TABLE BORDER=4 CELLPADDING=6>
+	<CAPTION>Advanced HTML Table Example</CAPTION>
+	<TR>
+		<TD></TD>	<TD></TD>			<TH COLSPAN=2>Average</TH>
+	</TR>
+	<TR>
+		<TD></TD>	<TD></TD>			<TH>Height</TH>		<TH>Weight</TH>
+	</TR>
+	<TR>	
+		<TH ROWSPAN=2>Gender</TH>
+	    			<TH>Males</TH>		<TD>1.9</TD>		<TD>0.003</TD>
+	</TR>
+	<TR>	
+					<TH>Females</TH>	<TD>1.7</TD>		<TD>0.002</TD>
+	</TR>
+</TABLE>
+
+<P>
+<PRE>
+&lt;TABLE BORDER=4 CELLPADDING=6&gt;
+    &lt;CAPTION&gt;Advanced HTML Table Example&lt;/CAPTION&gt;
+    &lt;TR&gt;
+        &lt;TD&gt;&lt;/TD&gt;   &lt;TD&gt;&lt;/TD&gt;           &lt;TH COLSPAN=2&gt;Average&lt;/TH&gt;
+    &lt;/TR&gt;
+    &lt;TR&gt;
+        &lt;TD&gt;&lt;/TD&gt;   &lt;TD&gt;&lt;/TD&gt;           &lt;TH&gt;Height&lt;/TH&gt;     &lt;TH&gt;Weight&lt;/TH&gt;
+    &lt;/TR&gt;
+    &lt;TR&gt;    
+        &lt;TH ROWSPAN=2&gt;Gender&lt;/TH&gt;
+                    &lt;TH&gt;Males&lt;/TH&gt;      &lt;TD&gt;1.9&lt;/TD&gt;        &lt;TD&gt;0.003&lt;/TD&gt;
+    &lt;/TR&gt;
+    &lt;TR&gt;    
+                    &lt;TH&gt;Females&lt;/TH&gt;    &lt;TD&gt;1.7&lt;/TD&gt;        &lt;TD&gt;0.002&lt;/TD&gt;
+    &lt;/TR&gt;
+&lt;/TABLE&gt;
+</PRE>
+
+<P>
+<HR>
+<H2><TT>&lt;PRE&gt;</TT> Formatting</H2>
+Example of PRE-formatted text
+<PRE>
+                        Average
+        Gender      Height  Weight
+        Males       1.9     0.003
+        Females     1.7     0.002               
+</PRE>
+
+</BODY>
+</HTML>
+
