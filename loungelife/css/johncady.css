@@ -1,0 +1,158 @@
+/* Global Styles */
+
+body {
+	margin:0;
+	}
+	
+td {
+	font:12px arial;
+	color:#000000;
+	}
+	
+th {
+	font:12px arial;
+	color:#000000;
+	font-weight:bold;
+	}
+	
+hr {
+	height:1px; 
+	color: #000000;
+	border: 1;
+	}
+	
+a {
+	color: #9966FF;
+	font-weight:bold;
+	text-decoration: none;
+	}
+	
+a:hover {
+	color: #9966FF;
+	text-decoration: underline;
+	}
+/* ID Styles */
+
+#navigation td {
+	border-bottom: 1px solid rgb(51,51,51);
+	}
+	
+#navigation a {
+	font:11px arial;
+	color: #000000;
+	line-height:16px;
+	letter-spacing:.1em;
+	text-decoration: none;
+	display:block;
+	padding:12px 6px 8px 20px;
+	background:  url(/~bing/newsite3/images/arrow_bullet.gif) 8px 55% no-repeat;
+	font-weight:bold;
+	}
+	
+#navigation a:hover {
+	background:  url(/~bing/newsite3/images/arrow_bullet.gif) 8px 55% no-repeat;
+	color:#2DA338;
+	}
+	
+#sidebarHeader {
+	padding: 4px;
+	border: 1px solid rgb(102,102,102);
+	}
+
+#logo {font:20px arial;
+	color: #9966FF;
+	letter-spacing:.2em;
+	}
+
+#tagline {font:12px geneva;
+	color: #5B6C86;
+	letter-spacing:.4em;
+	}
+	
+#dateformat {font:11px arial;
+	color: #000000;
+	letter-spacing:.4em;
+	vertical-align: middle;
+	}
+	
+#dateformat a {font:11px arial;
+	color: #FFFFFF;
+	font-weight:bold;
+	letter-spacing:.1em;
+	}
+	
+#dateformat a:hover {
+	color: #0099ff;
+	letter-spacing:.1em;
+	}
+	
+#borderLeft {
+	border-left: 1px solid rgb(102,102,102);
+	}
+	
+#borderRight {
+	border-right: 1px solid rgb(102,102,102);
+	}
+	
+#borderBottom {
+	border-bottom: 1px solid rgb(102,102,102);
+	border-left: 1px solid rgb(102,102,102);
+	border-right: 1px solid rgb(102,102,102);
+	}
+	
+/* Class Styles */
+	
+.bodyText {
+	font:12px arial;
+	color:#000000;
+	line-height:20px;
+	margin-top:0;
+	}
+	
+.pageName{
+	font:18px arial;
+	color: #9966FF;
+	line-height:22px;
+	}
+	
+.subHeader {
+	font:11px arial;
+	color: #339933;
+	line-height:18px;
+	letter-spacing:.1em;
+	font-weight:bold;
+	}	
+
+.detailText {
+	font:11px arial;
+	color:#000000;
+	line-height:16px;
+	}
+	
+.smallText {
+	font:10px arial;
+	color:#000000;
+	}
+	
+.tableHeader {
+	font:12px arial;
+	color:#9966FF;
+	margin-top:0;
+	font-weight:bold;
+	}
+
+.tableText {
+	font:12px arial;
+	color:#000000;
+	line-height:20px;
+	margin-top:0;
+	}
+	
+.altrowtableText {
+	font:12px arial;
+	color:#000000;
+	line-height:20px;
+	margin-top:0;
+	background-color: #000000;
+	}
+		
